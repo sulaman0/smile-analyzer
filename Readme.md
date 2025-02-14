@@ -17,6 +17,8 @@ Clone the repository and install dependencies:
 git clone https://github.com/sulaman0/smile-analyzer.git  
 cd smile-analyzer  
 pip install -r requirements.txt 
+
+python opencv_smile_analysis.py
 ```
 
 ## Installation 
