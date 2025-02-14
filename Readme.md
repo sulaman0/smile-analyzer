@@ -19,7 +19,6 @@ cd smile-analyzer
 pip install -r requirements.txt 
 ```
 
-
 ## Installation 
 
 _Image found, processing..._
