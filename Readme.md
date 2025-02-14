@@ -23,10 +23,10 @@ pip install -r requirements.txt
 
 _Image found, processing..._
 
-**Overall Lip Width:** 45.67
-**Upper Lip Width:** 30.12
-**Lower Lip Width:** 32.45
-**Upper Lip Height:** 10.23
-**Lower Lip Height:** 12.78
+- **Overall Lip Width:** 45.67
+- **Upper Lip Width:** 30.12
+- **Lower Lip Width:** 32.45
+- **Upper Lip Height:** 10.23
+- **Lower Lip Height:** 12.78
 
 **Smile Score:** 7.8
