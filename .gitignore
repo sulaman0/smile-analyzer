@@ -1,0 +1,62 @@
+# Byte-compiled / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+env/
+*.venv
+
+# Package and dependency files
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+poetry.toml
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Log and database files
+*.log
+*.sqlite3
+*.db
+*.sqlite
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test coverage and reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.pytest_cache/
+pytestdebug.log
+
+# Docker and deployment
+docker-compose.override.yml
+.envrc
+.terraform/
