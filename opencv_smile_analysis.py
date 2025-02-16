@@ -100,5 +100,33 @@ def calculate_smile_score(lip_width, upper_lip_width, lower_lip_width, upper_lip
 
     # return round(smile_score_10, 1), round(smile_score_100, 1)
     return round(smile_score_10, 1)
+def write_data_to_csv():
+    # Define dataset path
+    DATASET_PATH = "./dataset/celebA/img_align_celeba"
+
+    # List all image files
+    image_files = [f for f in os.listdir(DATASET_PATH) if f.endswith(".jpg")]
+
+    # Store extracted features
+    data = []
+
+    for image_file in image_files:
+        image_path = os.path.join(DATASET_PATH, image_file)
+        features = detect_smile(image_path)  # Extract lip features
+
+        if features is not None:
+            lip_width, upper_lip_width, lower_lip_width, upper_lip_height, lower_lip_height = features
+            smile_score = calculate_smile_score(lip_width, upper_lip_width, lower_lip_width, upper_lip_height, lower_lip_height)
+            print(features, smile_score, image_file)
+            data.append([image_file, lip_width, upper_lip_width, lower_lip_width, upper_lip_height, lower_lip_height, int(smile_score)])
+
+    # Save data to CSV
+    df = pd.DataFrame(data, columns=["image", "lip_width", "upper_lip_width", "lower_lip_width", "upper_lip_height",
+                                     "lower_lip_height", "smile_score"])
+    df.to_csv("smile_data.csv", index=False)
+
+    print("Dataset saved successfully!")
+
+# write_data_to_csv()
 detect_smile('./dataset/celebA/img_align_celeba/000001.jpg')
 ## 🔹 Step 2: Train the AI Model
