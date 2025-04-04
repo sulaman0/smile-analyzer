@@ -4,7 +4,7 @@
 Smile Analyzer is a Python-based tool that detects a smile from a facial image and computes key metrics such as lip width, upper and lower lip width, and lip height. Using MediaPipe FaceMesh, the tool extracts key facial landmarks to analyze the smile and generates a smile score
 
 ## Features  
-- Detects facial landmarks related to the lips
+- Detects facial landmarks related to the lips.
 - Measures overall smile width and lip height.  
 - Computes a smile score on a scale of 1-10.  
 - Displays facial landmarks for visualization
